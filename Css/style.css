@@ -217,13 +217,14 @@ strong {
 }
 
 .third-section>div img {
-    width: 400px;
+    width: 450px;
     border-radius: 10px;
 }
 
 .third-section>div p {
+    font-weight: bold;
     padding: 2rem;
-    max-width: 600px;
+    max-width: 500px;
     color: var(--white);
 }
 

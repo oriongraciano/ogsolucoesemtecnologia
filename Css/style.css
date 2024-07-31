@@ -250,7 +250,6 @@ footer > p {
 /* Responsividade */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
         text-align: center;
     }
 
@@ -283,7 +282,6 @@ footer > p {
     }
 
     footer > div {
-        flex-direction: column;
         text-align: center;
     }
 }

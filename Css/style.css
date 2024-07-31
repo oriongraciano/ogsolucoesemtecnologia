@@ -170,8 +170,8 @@ strong {
 
 .fourth-section > img {
     border-radius: 15px;
-    width: 1000px;
-    min-width: 65%;
+    width: 800px;
+    max-width: 130%;
 }
 
 .second-section ul {

@@ -26,27 +26,9 @@
             <a href="#contact" class="nav-links">Contatos</a>
         </nav>
         <div class="box-btn-actions">
-            <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar</button>
+            <button type="button" class="btn-action" id="cadastrarCliente">Cadastrar</button>
             <a href="TeladeLogin/TeladeLogin-index.html"><button class="btn-action">Entrar</button></a>
         </div>
-
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2>Novo Cliente</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Seu Nome" required>
-                    <input type="email" id="email" class="modal-field" placeholder="Seu E-mail" required>
-                    <input type="text" id="celular" class="modal-field" placeholder="Seu Celular" required>
-                    <input type="text" id="cidade" class="modal-field" placeholder="Sua Cidade" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button blue">Cancelar</button>
-                </footer>
-            </div>
     </header>
 
     <main>
@@ -55,13 +37,12 @@
                 <h1>Olá! Somos <br> <strong>OG Soluções em Tecnologia</strong></h1>
                 <p> Uma empresa no seguimento de Tecnologia focada na criação de <strong>WebSites, Landing Pages e
                         Sistemas Web</strong></p>
-                <a class="btn-action link-action" href="https://api.whatsapp.com/send?phone=5564993000938"
-                    title="Contato Whatsapp" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="15"
-                        height="15" fill="#fff" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                        <path
-                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                    </svg>
-                    Fale Conosco</a>
+                <a href="https://api.whatsapp.com/send?phone=5564993000938" title="Contato Whatsapp"
+                    target="_blank"><button class="btn-whats"><svg xmlns="http://www.w3.org/2000/svg" width="15"
+                            height="15" fill="#fff" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>Fale Conosco</button></a>
             </div>
             <div class="box-img-main">
                 <img class="img-profile" src="Imagens/Seu Projeto Aqui.png" alt="Projeto Responsivo">
@@ -84,13 +65,18 @@
             <h2 class="title">Quem Somos?</h2>
             <div>
                 <img class="img-who-am-i" src="Imagens/Quem somos.png" alt="Foto Orion Graciano">
-                <p>Somos especialistas em <strong>desenvolver soluções para web</strong>, unindo tecnologia com diferentes estratégias de
-                    marketing digital,essa união resulta em projetos dinâmicos e eficientes, visando atender as necessidades de nossos
+                <p>Somos especialistas em <strong>desenvolver soluções para web</strong>, unindo tecnologia com
+                    diferentes estratégias de
+                    marketing digital,essa união resulta em projetos dinâmicos e eficientes, visando atender as
+                    necessidades de nossos
                     clientes, optimizando suas vendas e visibilidade.
                     Utilizamos as melhores tecnologias estratégias para criar soluções sob medida para os mais variados
-                    tipos de projetos sejam <strong> Apps, websites, Landing Pages, Loja virtual, Sistemas web</strong> entre outras. <br>
-                    Para as empresas e o comércio a internet tornou-se um ambiente cada vez mais promissor, comoportunidades para todos os 
-                    tipos de produtos e serviços,e é nessa frente em que atuamos, em desenvolver soluções web inovadoras que liguem a sua 
+                    tipos de projetos sejam <strong> Apps, websites, Landing Pages, Loja virtual, Sistemas web</strong>
+                    entre outras. <br>
+                    Para as empresas e o comércio a internet tornou-se um ambiente cada vez mais promissor,
+                    comoportunidades para todos os
+                    tipos de produtos e serviços,e é nessa frente em que atuamos, em desenvolver soluções web inovadoras
+                    que liguem a sua
                     empresa como público online.</p>
             </div>
         </section>

@@ -132,7 +132,8 @@ section {
     gap: 2rem;
     flex-wrap: wrap;
     align-items: center;
-    min-height: 600px;
+    padding: 9rem;
+    margin-top: 10rem;
 }
 
 .first-section>div {
@@ -273,7 +274,7 @@ footer>p {
         margin-top: 12rem;
         flex-direction: column;
         text-align: center;
-        padding: 2rem;
+        padding: 3rem;
     }
 
     .box-img-main,

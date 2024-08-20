@@ -56,8 +56,7 @@ header {
 }
 
 .img-logo {
-    max-width: 75px;
-    height: 100%;
+    max-width: 80px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -257,6 +256,10 @@ footer>p {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .img-logo {
+        height: auto;
+    }
+    
     header {
         text-align: center;
     }
@@ -297,6 +300,10 @@ footer>p {
 }
 
 @media (max-width: 480px) {
+    .img-logo {
+        height: auto;
+    }
+  
     h1 {
         font-size: 2.5rem;
         letter-spacing: 2px;

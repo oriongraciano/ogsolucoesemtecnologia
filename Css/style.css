@@ -102,6 +102,12 @@ nav {
 .btn-whats {
     background-color: #4e8e46;
     color: var(--white);
+    width: 170px;
+}
+
+.icone-whats {
+    position: absolute;
+    left: 242px;
 }
 
 .btn-action:hover {

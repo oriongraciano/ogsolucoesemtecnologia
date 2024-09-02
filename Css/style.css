@@ -100,11 +100,19 @@ nav {
     color: var(--white);
 }
 
-.btn-whats {
-    background-color: #4e8e46;
+.btn-icons {
     position: absolute;
-    left: 10px;
+    left: 240px;
 }
+
+.btn-whats {
+    background-color: #20cf60;
+    width: 180px;
+    height: 48px;
+    align-items: center;
+}
+
+
 
 .btn-action:hover {
     background-color: var(--dark3);
@@ -309,6 +317,11 @@ footer>p {
     h1 {
         font-size: 2.5rem;
         letter-spacing: 2px;
+    }
+
+    .btn-icons {
+        position: absolute;
+        left: 122px;
     }
 
     .link-action,

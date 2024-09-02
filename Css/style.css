@@ -100,16 +100,15 @@ nav {
     color: var(--white);
 }
 
-.btn-icons {
-    position: absolute;
-    left: 240px;
+.btn-whats {
+    background-color: green;
+    width: 200px;
+    height: 50px;
 }
 
-.btn-whats {
-    background-color: #20cf60;
-    width: 180px;
-    height: 48px;
-    align-items: center;
+.btn-ico {
+    position: absolute;
+    left: 200px;
 }
 
 
@@ -269,7 +268,7 @@ footer>p {
     .img-logo {
         height: auto;
     }
-    
+
     header {
         text-align: center;
     }
@@ -313,15 +312,15 @@ footer>p {
     .img-logo {
         height: auto;
     }
-  
+
     h1 {
         font-size: 2.5rem;
         letter-spacing: 2px;
     }
 
-    .btn-icons {
+    .btn-icon {
         position: absolute;
-        left: 122px;
+        left: 50px;
     }
 
     .link-action,

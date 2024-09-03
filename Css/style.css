@@ -327,6 +327,10 @@ footer>p {
         letter-spacing: 2px;
     }
 
+    .btn-whats {
+        margin-left: 74px;
+    }
+
     .link-action,
     .btn-action {
         font-size: 0.8rem;

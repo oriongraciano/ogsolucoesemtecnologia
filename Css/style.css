@@ -178,7 +178,8 @@ strong {
 
 .img-profile {
     border-radius: 30%;
-    width: 400px;
+    width: 420px;
+    margin-top: 5rem;
 }
 
 :is(.second-section, .fourth-section) {

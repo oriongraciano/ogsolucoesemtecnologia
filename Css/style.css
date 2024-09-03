@@ -105,9 +105,10 @@ nav {
     width: 220px;
     height: 52px;
     border-radius: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
     color: black;
 }
@@ -268,6 +269,7 @@ footer>p {
     justify-content: center;
     text-align: center;
     color: var(--dark5);
+    font-weight: bold;
 }
 
 /* Responsividade */

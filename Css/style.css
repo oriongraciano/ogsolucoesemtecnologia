@@ -358,11 +358,6 @@ footer>p {
         font-size: 0.8rem;
     }
 
-    .first-section {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
     .third-section>div p {
         padding: 1rem;
     }
@@ -371,5 +366,10 @@ footer>p {
         padding: 2rem;
         margin-top: 15px;
         flex-direction: column;
+    }
+
+    .first-section {
+        flex-direction: column;
+        padding: 1rem;
     }
 }

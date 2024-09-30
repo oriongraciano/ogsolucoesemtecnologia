@@ -102,7 +102,7 @@ nav {
 
 .btn-whats {
     background-color: rgb(20, 180, 20);
-    width: 220px;
+    width: 250px;
     height: 52px;
     border-radius: 20px;
     display: flex;
@@ -192,18 +192,13 @@ strong {
     gap: 4rem;
 }
 
-.fourth-section>img {
-    border-radius: 15px;
-    width: 800px;
-    max-width: 130%;
-}
 
 .second-section ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
 }
 
@@ -239,7 +234,7 @@ strong {
 
 .third-section>div img {
     width: 100%;
-    max-width: 450px;
+    max-width: 420px;
     border-radius: 10px;
 }
 
@@ -250,9 +245,32 @@ strong {
     color: var(--white);
 }
 
+.fourth-section>img {
+    border-radius: 15px;
+    width: 800px;
+    max-width: 130%;
+}
+
+
+.fifth-section>div {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fifth-section>div img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 footer {
     background-color: var(--dark6);
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -268,6 +286,7 @@ footer>div {
 footer>p {
     justify-content: center;
     text-align: center;
+    margin-bottom: 20px;
     color: var(--dark5);
     font-weight: bold;
 }
@@ -299,7 +318,7 @@ footer>p {
     }
 
     .box-img-main,
-    .img-profile {
+    .img-profile  {
         max-width: 100%;
     }
 
@@ -338,5 +357,11 @@ footer>p {
 
     .third-section>div p {
         padding: 1rem;
+    }
+
+    .fifth-section>div {
+        padding: 2rem;
+        margin-top: 15px;
+        flex-direction: column;
     }
 }

@@ -270,6 +270,11 @@ strong {
     cursor: pointer;
 }
 
+.fifth-section h2 {
+    text-align: center;
+    justify-content: center;
+}
+
 footer {
     background-color: var(--dark6);
     padding: 2rem;

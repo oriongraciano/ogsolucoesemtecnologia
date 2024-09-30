@@ -263,7 +263,9 @@ strong {
 
 .fifth-section>div img {
     width: 100%;
-    max-width: 250px;
+    max-width: 220px;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -352,6 +354,7 @@ footer>p {
     }
 
     .first-section {
+        flex-direction: column;
         padding: 1rem;
     }
 

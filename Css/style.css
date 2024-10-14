@@ -71,7 +71,11 @@ header {
 }
 
 .modal  h2 {
+<<<<<<< Updated upstream
     margin-left: 35px;
+=======
+    margin-left: 30px;
+>>>>>>> Stashed changes
     margin-bottom: 20px;
     text-align: center;
     align-items: center;
@@ -91,7 +95,11 @@ input {
 textarea {
     width: 280px;
     height: 70px;
+<<<<<<< Updated upstream
     margin-left: 30px;
+=======
+    margin-left: 25px;
+>>>>>>> Stashed changes
     margin-bottom: 12px;
 }
 

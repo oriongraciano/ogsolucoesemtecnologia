@@ -3,12 +3,16 @@ function rolarParaTopo() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-function pgManutecao (){
-    alert("Pagina em Manutenção. Tente novamente mais tarde!")
-}
+// Função de Abrir Modal
+const openModalButton = document.querySelector("#open-modal");
+const closeModal = document.querySelector("#close-modal");
+const modal = document.querySelector(".modal");
 
-let cadastrar = document.querySelector("#cadastrarCliente")
+openModalButton.addEventListener("click", function() {
+    modal.style.display ="flex"
+ })
 
-cadastrar.addEventListener("click", () => {
-    pgManutecao()
-})
+ closeModal.addEventListener("click", function() {
+    modal.style.display ="none"
+    return;
+ })

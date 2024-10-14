@@ -26,10 +26,24 @@
             <a href="#contact" class="nav-links">Contatos</a>
         </nav>
         <div class="box-btn-actions">
-            <button type="button" class="btn-action" id="cadastrarCliente">Cadastrar</button>
+            <button type="button" class="btn-action" id="open-modal">Cadastrar</button>
             <a href="TeladeLogin/TeladeLogin-index.html" title="Pagina de Login"><button type="button" class="btn-action">Fazer Login</button></a>
         </div>
     </header>
+
+    <div class="modal">
+        <form action="https://formsubmit.co/ogsolucoesemtecnologia@gmail.com"
+        method="POST" target="_blank">
+            <h2>Nos conte qual o seu negocio!</h2>
+            <input type="text" placeholder="Nome:" name="nome" />
+            <input type="email" placeholder="E-mail:" name="E-mail" />
+            <input type="tel"placeholder="Celular:" name="Celular" />
+            <textarea name="message" placeholder="O que podemos criar para você?..."></textarea>
+            <br>
+            <button>Realizar Orçamento</button>
+            <button id="close-modal">Fechar</button>
+        </form>
+    </div>
 
     <main>
         <section class="first-section">

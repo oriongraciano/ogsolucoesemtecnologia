@@ -401,7 +401,7 @@ footer>p {
     }
 
     .modal {
-        max-width: 100%;
+        width: 100%;
 
     }
 
@@ -425,7 +425,7 @@ footer>p {
     }
 
     textarea {
-        margin-left: 32px;
+        margin-left: 40px;
     }
 
     .link-action,

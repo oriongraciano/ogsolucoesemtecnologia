@@ -62,9 +62,8 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     align-items: center;
-    max-width: 100%;
-    width: 380px;
-    height: 320px;
+    width: 400px;
+    height: 350px;
     border-radius: 12px;
     display: none;
     z-index: 99;
@@ -401,7 +400,7 @@ footer>p {
     }
 
     .modal {
-        width: 100%;
+        max-width: 100%;
 
     }
 
@@ -422,10 +421,6 @@ footer>p {
         margin-left: 45px;
         margin-bottom: 8px;
         border-radius: 5px;
-    }
-
-    textarea {
-        margin-left: 40px;
     }
 
     .link-action,

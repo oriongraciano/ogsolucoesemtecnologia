@@ -53,13 +53,13 @@ header {
 }
 
 
-.modal{
+.modal {
     background-color: aliceblue;
     color: var(--cyan1);
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,  -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     align-items: center;
     max-width: 100%;
@@ -70,7 +70,7 @@ header {
     z-index: 99;
 }
 
-.modal  h2 {
+.modal h2 {
     margin-left: 25px;
     margin-bottom: 20px;
     text-align: center;
@@ -367,7 +367,7 @@ footer>p {
     }
 
     .box-img-main,
-    .img-profile  {
+    .img-profile {
         max-width: 100%;
     }
 
@@ -401,14 +401,14 @@ footer>p {
     }
 
 
-    .modal  h2 {
+    .modal h2 {
         margin-left: 30px;
         margin-bottom: 20px;
         text-align: center;
         align-items: center;
     }
-    
-    
+
+
     input {
         width: 280px;
         height: 28px;
@@ -418,7 +418,10 @@ footer>p {
         margin-bottom: 8px;
         border-radius: 5px;
     }
-    
+
+    textarea {
+        margin-left: 45px;
+    }
 
     .link-action,
     .btn-action {

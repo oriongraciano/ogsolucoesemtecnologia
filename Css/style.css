@@ -70,7 +70,6 @@ header {
 }
 
 .modal h2 {
-    margin-left: 20px;
     margin-bottom: 20px;
     text-align: center;
     align-items: center;
@@ -82,7 +81,7 @@ input {
     height: 28px;
     display: block;
     align-items: center;
-    margin-left: 45px;
+    margin-left: 55px;
     margin-bottom: 8px;
     border-radius: 5px;
 }
@@ -90,6 +89,7 @@ input {
 textarea {
     width: 280px;
     height: 70px;
+    align-items: center;
     margin-bottom: 10px
 }
 

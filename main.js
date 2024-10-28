@@ -14,5 +14,4 @@ openModalButton.addEventListener("click", function() {
 
  closeModal.addEventListener("click", function() {
     modal.style.display ="none"
-    return;
  })

@@ -89,10 +89,16 @@ input {
 textarea {
     width: 280px;
     height: 70px;
+    border-radius: 5px;
     align-items: center;
     margin-bottom: 10px
 }
 
+button {
+    border: none;
+    background-color: var(--cyan1);
+    margin: 15px;
+}
 
 .box-img-header {
     height: 100%;

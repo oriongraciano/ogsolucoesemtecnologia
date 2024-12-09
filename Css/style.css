@@ -367,6 +367,7 @@ footer>p {
     .first-section {
         margin-top: 12rem;
         flex-direction: column;
+        justify-content: center;
         text-align: center;
         padding: 3rem;
     }
@@ -417,5 +418,9 @@ footer>p {
     .first-section {
         flex-direction: column;
         padding: 1rem;
+    }
+
+    fifth-section {
+        flex-direction: column;
     }
 }

@@ -41,7 +41,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -352,7 +352,9 @@ footer>p {
     }
 
     header {
-        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     nav {
@@ -394,7 +396,9 @@ footer>p {
 @media (max-width: 480px) {
 
     header {
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .img-logo {

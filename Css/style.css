@@ -351,7 +351,7 @@ footer>p {
     }
 
     header {
-        max-width: 98%;
+        max-width: 100%;
     }
 
     nav {
@@ -398,7 +398,7 @@ footer>p {
 @media (max-width: 480px) {
 
     header {
-        max-width: 98%;
+        max-width: 100%;
     }
 
     .img-logo {

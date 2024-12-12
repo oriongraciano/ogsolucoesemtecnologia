@@ -306,7 +306,6 @@ strong {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-
 }
 
 .fifth-section>div img {
@@ -352,7 +351,7 @@ footer>p {
     }
 
     header {
-        max-width: 100%;
+        max-width: 98%;
     }
 
     nav {
@@ -392,7 +391,6 @@ footer>p {
 
     fifth-section {
         flex-direction: column;
-        align-items: center;
         max-width: 100%;
     }
 }
@@ -400,7 +398,7 @@ footer>p {
 @media (max-width: 480px) {
 
     header {
-        max-width: 100%;
+        max-width: 98%;
     }
 
     .img-logo {
@@ -428,7 +426,6 @@ footer>p {
 
     fifth-section {
         flex-direction: column;
-        align-items: center;
         max-width: 100%;
     }
 }

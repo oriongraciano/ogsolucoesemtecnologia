@@ -259,7 +259,8 @@ strong {
 .second-section ul li:hover {
     color: var(--dark4);
     transition: .4s;
-    cursor: default;
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .title {
@@ -313,8 +314,13 @@ strong {
     align-items: center;
     justify-content: center;
     align-self: flex-start;
+}
+
+.fifth-section>div img:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
+
 
 .fifth-section h2 {
     text-align: center;

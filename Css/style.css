@@ -408,6 +408,10 @@ footer>p {
         max-width: 100%;
     }
 
+    .btn-action {
+        margin-right: 10px;
+    }
+
     .img-logo {
         height: auto;
     }

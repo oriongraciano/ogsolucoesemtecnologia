@@ -260,7 +260,7 @@ strong {
 .second-section ul li:hover {
     color: var(--dark4);
     transition: .4s;
-    transform: scale(1.05);
+    transform: scale(1.08);
     cursor: pointer;
 }
 

@@ -98,8 +98,12 @@ textarea {
 .btnModal {
     border: none;
     background-color: var(--cyan1);
+    text-align: center;
     margin: 15px;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 
 .box-img-header {
     height: 100%;

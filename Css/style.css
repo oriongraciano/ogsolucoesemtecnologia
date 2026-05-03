@@ -156,19 +156,20 @@ nav {
 .btn-whats {
     background-color: rgb(20, 180, 20);
     width: 230px;
-    height: 50px;
+    height: 52px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: underline;
+    text-align: center;
     font-weight: bold;
     color: black;
 }
 
 .btn-ico {
     background-color: rgb(20, 180, 20);
-    width: 26px;
+    width: 24px;
     height: 24px;
     margin-right: 12px;
 }

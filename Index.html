@@ -6,6 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <meta name="description"
+        content="OG Soluções em Tecnologia: empresa goiana especializada em Sistemas Web, Websites, E-commerce, Apps, Integrações e Automações com Agentes de IA sob-medida para o seu negócio.">
+    <meta name="theme-color" content="#2f2f46">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OG Soluções em Tecnologia">
+    <meta property="og:description"
+        content="Sistemas Web, Websites, E-commerce, Apps, Integrações e Automações com Agentes de IA para o seu negócio.">
+    <meta property="og:image" content="Imagens/Logo.png">
+    <meta property="og:locale" content="pt_BR">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="Css/style.css">
     <link rel="icon" href="Imagens/Logo-icon.png" type="image/png">
     <title>OG Soluções em Tecnologia</title>
@@ -19,22 +32,28 @@
                 onclick="rolarParaTopo()">
         </div>
 
-        <nav>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav"
+            aria-label="Abrir menu">
+            <span></span>
+        </button>
+
+        <nav id="main-nav">
             <a href="#experiences" class="nav-links">Nossos Serviços</a>
             <a href="#who-am-i" class="nav-links">Quem Somos?</a>
             <a href="#estrategias" class="nav-links">Estratégias</a>
             <a href="#contact" class="nav-links">Contatos</a>
         </nav>
         <div class="box-btn-actions">
-            <button type="button" class="btn-action" id="open-modal">Cadastrar</button>
+            <button type="button" class="btn-action btn-primary" id="open-modal">Cadastrar</button>
             <a href="TeladeLogin/TeladeLogin-index.html" title="Pagina de Login"><button type="button"
-                    class="btn-action">Fazer Login</button></a>
+                    class="btn-action btn-ghost">Fazer Login</button></a>
         </div>
     </header>
 
-    <div class="modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <form action="https://formsubmit.co/ogsolucoesemtecnologia@gmail.com" method="POST" target="_self">
-            <h2>Nos conte qual o seu negocio!</h2>
+            <h2 id="modal-title">Nos conte qual o seu negocio!</h2>
             <input type="text" placeholder=" Nome:" name="nome" required />
             <input type="email" placeholder=" E-mail:" name="E-mail" required />
             <input type="tel" placeholder=" Contato:" name="Celular" required />
@@ -42,119 +61,262 @@
             <input type="hidden" name="_captcha" value="false">
 
             <button type="submit" class="btnModal">Realizar Orçamento</button>
-            <button id="close-modal" class="btnModal">Fechar</button>
+            <button type="button" id="close-modal" class="btnModal">Fechar</button>
         </form>
     </div>
 
     <main>
-        <section class="first-section">
-            <div>
+        <section class="hero">
+            <div class="hero-copy">
                 <h1>Olá! Somos <br> <strong>OG Soluções em Tecnologia</strong></h1>
-                <p> Uma empresa goiana de tecnologia focada na criação de soluções como:<strong> Sistemas Web, WebSites, E-commerce, Apps, Integrações e Automações com Agentes de IA</strong>.</p>
-                <div>
+                <p class="hero-lead">Uma empresa goiana de tecnologia focada na criação de soluções como:
+                    <strong>Sistemas Web, WebSites, E-commerce, Apps, Integrações e Automações com Agentes de
+                        IA</strong>.
+                </p>
+                <div class="hero-cta-row">
                     <a href="https://api.whatsapp.com/send?phone=5564993000938" title="Contato Orçamento"
-                        target="_blank">
-                        <button class="btn-whats"><svg xmlns="http://www.w3.org/2000/svg" class="btn-ico" width="20"
-                                height="20" fill="#3c3c3c" viewBox="0 0 16 16">
-                                <path
+                        target="_blank" rel="noopener">
+                        <span class="btn-whats"><svg xmlns="http://www.w3.org/2000/svg" class="btn-ico"
+                                viewBox="0 0 16 16">
+                                <path fill="#0f2a0f"
                                     d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                            </svg>Fale Conosco!</button></a>
+                            </svg>Fale Conosco!</span>
+                    </a>
+                    <a href="#experiences" class="btn-secondary">Ver Serviços</a>
                 </div>
             </div>
-            <div class="box-img-main">
-                <img class="img-profile" src="Imagens/Seu Projeto Aqui.png" alt="Projeto Responsivo">
-                <h2>Nunca foi tão fácil obter soluções de sucesso para seu negócio!</h2>
+
+            <div class="hero-visual">
+                <div class="hero-graph-frame">
+                    <svg class="hero-graph" viewBox="0 0 400 400" aria-hidden="true">
+                        <path class="hero-link" pathLength="1" d="M200,200 L90,110" style="animation-delay:.05s" />
+                        <path class="hero-link" pathLength="1" d="M200,200 L310,90" style="animation-delay:.12s" />
+                        <path class="hero-link" pathLength="1" d="M200,200 L70,290" style="animation-delay:.19s" />
+                        <path class="hero-link" pathLength="1" d="M200,200 L330,300" style="animation-delay:.26s" />
+                        <path class="hero-link" pathLength="1" d="M200,200 L200,60" style="animation-delay:.33s" />
+                        <path class="hero-link" pathLength="1" d="M200,200 L200,340" style="animation-delay:.4s" />
+                        <path class="hero-link" pathLength="1" d="M90,110 L310,90" style="animation-delay:.47s" />
+                        <path class="hero-link" pathLength="1" d="M70,290 L330,300" style="animation-delay:.54s" />
+
+                        <circle class="hero-node" cx="90" cy="110" r="7" style="animation-delay:.5s" />
+                        <circle class="hero-node" cx="310" cy="90" r="7" style="animation-delay:.56s" />
+                        <circle class="hero-node" cx="70" cy="290" r="7" style="animation-delay:.62s" />
+                        <circle class="hero-node" cx="330" cy="300" r="7" style="animation-delay:.68s" />
+                        <circle class="hero-node" cx="200" cy="60" r="6" style="animation-delay:.74s" />
+                        <circle class="hero-node" cx="200" cy="340" r="6" style="animation-delay:.8s" />
+                        <circle class="hero-node is-hub" cx="200" cy="200" r="15" style="animation-delay:0s" />
+                    </svg>
+
+                    <span class="hero-chip hero-chip--1">Automação</span>
+                    <span class="hero-chip hero-chip--2">Integrações</span>
+                    <span class="hero-chip hero-chip--3">IA</span>
+                </div>
+                <p class="hero-subtext">Nunca foi tão fácil obter soluções de sucesso para seu negócio!</p>
             </div>
         </section>
 
-        <section id="experiences" class="second-section">
-            <h2 class="title">Nossos Serviços</h2>
-            <ul>
-                <li>Sistemas Web</li>
-                <li>WebSite Institucional</li>
-                <li>Landing Page</li>
-                <li>E-commerce</li>
-                <li>Automação de processos</li>
-                <li>Integrações entre Sistemas</li>
-                <li>Apps Mobile</li>
-            </ul>
-        </section>
-
-        <section id="who-am-i" class="third-section">
-            <h2 class="title">Quem Somos?</h2>
+        <section id="experiences" class="services">
             <div>
-                <img class="img-who-am-i" src="Imagens/Quem somos.png" alt="Foto quem somos nos">
-                <p><strong>Somos especialistas no desenvolvimento de soluções tecnológicas para o seu negócio.</strong> Utilizamos tecnologias modernas, com plataformas que unem a inteligência artificial para criar projetos sob-medida, eficientes e escalaveis com o objetivo de atender de forma precisa às necessidades de nossos clientes. 
-                <strong>Implantando soluções inteligentes com foco na gestão e otimização de processos, automatização de tarefas, promovendo a produtividade e optimizando resultados.</strong> <br><br>
-                Fazemos uso das melhores tecnologias do mercado, traçando estratégias para os mais variados tipos de negócios e projetos:<strong> integrações entre sistemas, Automação de processos, Sistemas web, Aplicativos mobile, Websites, Landing pages, E-commerce, Cardápio online, Chatbots de atendimento, entre outros.</strong> <br> <br>
-                Para as empresas e o comércio em geral, a internet tornou-se um ambiente cada vez mais necessário e promissor, repleto de oportunidades para todos os tipos de produtos e serviços. <strong>É nessa frente que atuamos: optimizando resultados, promovendo relevância digital e impulsionando a inovação.</strong></p>
+                <h2 class="title">Nossos Serviços</h2>
+                <p class="section-lead">Soluções sob-medida, do site institucional à automação com inteligência
+                    artificial.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <span class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="8 9 4 12 8 15" />
+                            <polyline points="16 9 20 12 16 15" />
+                        </svg>
+                    </span>
+                    <h3>Sistemas Web</h3>
+                    <p>Plataformas sob-medida para gerenciar e otimizar a operação do seu negócio.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="16" rx="2" />
+                            <line x1="3" y1="8.5" x2="21" y2="8.5" />
+                            <circle cx="6.5" cy="6.25" r=".6" fill="currentColor" stroke="none" />
+                        </svg>
+                    </span>
+                    <h3>WebSite Institucional</h3>
+                    <p>Presença digital profissional para apresentar sua empresa com credibilidade.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="16" rx="2" />
+                            <line x1="3" y1="9" x2="21" y2="9" />
+                            <rect x="6" y="12" width="7" height="5" rx="1" />
+                        </svg>
+                    </span>
+                    <h3>Landing Page</h3>
+                    <p>Páginas focadas em conversão para campanhas e captação de clientes.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="9" cy="19" r="1.5" />
+                            <circle cx="18" cy="19" r="1.5" />
+                            <path d="M2 4h2.5l2.2 11.2a2 2 0 0 0 2 1.6h8.1a2 2 0 0 0 2-1.6L21 8H6" />
+                        </svg>
+                    </span>
+                    <h3>E-commerce</h3>
+                    <p>Loja virtual completa para vender seus produtos online.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 12a8 8 0 0 1 13.9-5.4L20 8" />
+                            <path d="M20 4v4h-4" />
+                            <path d="M20 12a8 8 0 0 1-13.9 5.4L4 16" />
+                            <path d="M4 20v-4h4" />
+                        </svg>
+                    </span>
+                    <h3>Automação de processos</h3>
+                    <p>Tarefas repetitivas automatizadas para ganhar produtividade.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="5" cy="6" r="2.4" />
+                            <circle cx="19" cy="6" r="2.4" />
+                            <circle cx="12" cy="18" r="2.4" />
+                            <path d="M7.1 7.2 10.1 16" />
+                            <path d="M16.9 7.2 13.9 16" />
+                        </svg>
+                    </span>
+                    <h3>Integrações entre Sistemas</h3>
+                    <p>Conectamos suas ferramentas para que os dados fluam sem retrabalho.</p>
+                </article>
+                <article class="service-card">
+                    <span class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="7" y="2.5" width="10" height="19" rx="2.2" />
+                            <line x1="10.2" y1="18" x2="13.8" y2="18" />
+                        </svg>
+                    </span>
+                    <h3>Apps Mobile</h3>
+                    <p>Aplicativos para Android e iOS que levam seu negócio ao bolso do cliente.</p>
+                </article>
             </div>
         </section>
 
-        <section id="estrategias" class="fourth-section">
+        <section id="who-am-i" class="about">
+            <h2 class="title">Quem Somos?</h2>
+            <div class="about-grid">
+                <div class="about-figure">
+                    <img src="Imagens/Quem somos.png" alt="Equipe OG Soluções em Tecnologia" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <div class="about-chips">
+                        <span class="about-chip">Soluções sob-medida com IA</span>
+                        <span class="about-chip">Gestão &amp; Automação de Processos</span>
+                        <span class="about-chip">Inovação &amp; Relevância Digital</span>
+                    </div>
+                    <p><strong>Somos especialistas no desenvolvimento de soluções tecnológicas para o seu
+                            negócio.</strong> Utilizamos tecnologias modernas, com plataformas que unem a
+                        inteligência artificial para criar projetos sob-medida, eficientes e escaláveis com o
+                        objetivo de atender de forma precisa às necessidades de nossos clientes.</p>
+                    <p><strong>Implantando soluções inteligentes com foco na gestão e otimização de processos,
+                            automatização de tarefas, promovendo a produtividade e optimizando resultados.</strong>
+                    </p>
+                    <p>Fazemos uso das melhores tecnologias do mercado, traçando estratégias para os mais variados
+                        tipos de negócios e projetos: <strong>integrações entre sistemas, Automação de processos,
+                            Sistemas web, Aplicativos mobile, Websites, Landing pages, E-commerce, Cardápio online,
+                            Chatbots de atendimento, entre outros.</strong></p>
+                    <p>Para as empresas e o comércio em geral, a internet tornou-se um ambiente cada vez mais
+                        necessário e promissor, repleto de oportunidades para todos os tipos de produtos e serviços.
+                        <strong>É nessa frente que atuamos: optimizando resultados, promovendo relevância digital e
+                            impulsionando a inovação.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="estrategias" class="strategy">
             <h2 class="title">Nossas Estratégias</h2>
-            <img src="Imagens/RecursosParaAlavancarSeuNegocio.jpeg" alt="" title="">
+            <div class="strategy-frame">
+                <img src="Imagens/RecursosParaAlavancarSeuNegocio.jpeg"
+                    alt="Recursos para alavancar seu negócio com as estratégias da OG Soluções" loading="lazy">
+            </div>
+        </section>
+
+        <section id="clientes" class="clients">
+            <h2 class="title">Marcas que confiam em nós</h2>
+            <div class="clients-row">
+                <a href="https://rvadaptacoes.com" title="Rv Adaptações" target="_blank" rel="noopener">
+                    <img src="Imagens/LOGO-RV.png" alt="Logo Rv Adaptações" loading="lazy"></a>
+
+                <a href="https://barerestaurantedojunin.com.br" title="Bar e Restaurante do Junin" target="_blank"
+                    rel="noopener">
+                    <img src="Imagens/Junin-LOGO.png" alt="Logo Bar e Restaurante Junin" loading="lazy"></a>
+
+                <a href="https://nogueirapneuserodas.com.br" title="Pneus Nogueira e Rodas" target="_blank"
+                    rel="noopener">
+                    <img src="Imagens/LogoNogueira.png" alt="Pneus Nogueira e Rodas" loading="lazy"></a>
+
+                <a href="https://remoincorporadora.com.br" title="Remo Incorporadora" target="_blank" rel="noopener">
+                    <img src="Imagens/Logo-remo.png" alt="Remo Incorporadora" loading="lazy"></a>
+
+                <a href="https://mundoplanalto.com.br" title="Mundo Planalto" target="_blank" rel="noopener">
+                    <img src="Imagens/Logo-MundoPlanalto.svg" alt="Logo Mundo Planalto" loading="lazy"></a>
+            </div>
         </section>
     </main>
 
-    <section id="who-am-i" class="fifth-section">
-        <h2 class="title">Marcas que confiam em nós</h2>
-        <div>
-            <a href="https://rvadaptacoes.com" title="Rv Adaptações" target="_blank">
-                <img class="img-who-am-i" src="Imagens/LOGO-RV.png" alt="Logo Rv Adaptações"></a>
+    <footer id="contact" class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col footer-brand">
+                <h2 class="title">OG Soluções em Tecnologia</h2>
+                <p>Sistemas, sites e automações com IA para o seu negócio crescer.</p>
+            </div>
 
-            <a href="https://barerestaurantedojunin.com.br" title="Bar e Restaurante do Junin" target="_blank">
-                <img class="img-who-am-i" src="Imagens/Junin-LOGO.png" alt="Logo Bar e Restaurante Junin"></a>
+            <div class="footer-col">
+                <h2 class="title">Contatos</h2>
+                <p>Fone: (64) 99300-0938</p>
+                <p>E-mail: ogsolucoesemtecnologia@gmail.com</p>
+            </div>
 
-            <a href="https://nogueirapneuserodas.com.br" title="Pneus Nogueira e Rodas" target="_blank">
-                <img class="img-who-am-i" src="Imagens/LogoNogueira.png" alt="Pneus Nogueira e Rodas"></a>
+            <div class="footer-col">
+                <h2 class="title">Redes Sociais</h2>
+                <div class="footer-social">
+                    <a href="https://api.whatsapp.com/send?phone=5564993000938" title="Contato Whatsapp"
+                        target="_blank" rel="noopener" aria-label="Whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                    </a>
 
-            <a href="https://remoincorporadora.com.br" title="Remo Incorporadora" target="_blank">
-                <img class="img-who-am-i" src="Imagens/Logo-remo.png" alt="Remo Incorporadora"></a>    
+                    <a href="https://www.instagram.com/ogtecnologia_?igsh=ZDJiN3FqMHVtNGw2" title="Instagram"
+                        target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/orion-graciano" title="Linkedin" target="_blank"
+                        rel="noopener" aria-label="Linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61564004964779&mibextid=ZbWKwL" title="Facebook"
+                        target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <footer id="contact">
-        <h2 class="title">Contatos</h2>
-        <p>Fone: (64) 99300-0938</p>
-        <p>E-mail: ogsolucoesemtecnologia@gmail.com</p>
-        <div>
-
-            <a href="https://api.whatsapp.com/send?phone=5564993000938" title="Contato Whatsapp" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-whatsapp"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                </svg>
-            </a>
-
-            <a href="https://www.instagram.com/ogtecnologia_?igsh=ZDJiN3FqMHVtNGw2" title="Intagram" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-instagram"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/orion-graciano" title="Linkedin" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-linkedin"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                </svg>
-            </a>
-
-            <a href="https://www.facebook.com/profile.php?id=61564004964779&mibextid=ZbWKwL" title="Facebook"
-                target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" class="bi bi-facebook"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-                </svg>
-            </a>
-        </div>
-        <br>
-        <p>Copyright © 2026 - OG Soluções em Tecnologia </p>
+        <p class="footer-bottom">Copyright © 2026 - OG Soluções em Tecnologia</p>
     </footer>
 
     <script src="main.js"></script>

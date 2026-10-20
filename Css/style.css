@@ -922,7 +922,7 @@ textarea:focus-visible {
     }
 
     .hero {
-        padding: 6.5rem 1.25rem 4rem;
+        padding: 9rem 1.25rem 4rem;
         gap: 2.5rem;
     }
 
@@ -993,6 +993,10 @@ textarea:focus-visible {
     .box-btn-actions button {
         padding: .5rem .6rem;
         font-size: .75rem;
+    }
+
+    .hero {
+        padding-top: 11rem;
     }
 
     .hero h1 {
